@@ -200,5 +200,21 @@
     </footer>
 
   </div>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      const formStatus = document.getElementById("formStatus");
+
+      // Simulate email send
+      console.log("Sending email to: mbimunyui_gethub@yahoo.com");
+      console.log("From:", email);
+      console.log("Message:", message);
+
+      formStatus.classList.remove("d-none");
+      this.reset();
+    });
+  </script>
 </body>
 </html>
