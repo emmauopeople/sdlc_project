@@ -7,276 +7,258 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    @media (max-width: 768px) {
+      .col-2 {
+        flex: 0 0 auto;
+        width: 50%;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .col-2 {
+        flex: 0 0 auto;
+        width: 33.3333%;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container-fluid p-0">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./images/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-          SGFB
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                All Products
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Body Spray</a></li>
-                <li><a class="dropdown-item" href="index.html">Colognes</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link active" href="./">New Products</a></li>
-            <li class="nav-item"><a class="nav-link active" href="./">Trending</a></li>
-            <li class="nav-item"><a class="nav-link" href="./login">Login</a></li>
-          </ul>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./">
+            <img src="./images/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            SGFB
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">All Products</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Body Spray</a></li>
+                  <li><a class="dropdown-item" href="#">Colognes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link active" href="./">New Products</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./">Trending</a></li>
+              <li class="nav-item"><a class="nav-link" href="./login">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Logo and Banner -->
+      <div class="row m-0 g-0">
+        <div class="col-2 d-flex align-items-center justify-content-center bg-white">
+          <img src="./images/to_edit.jpg" alt="SGFB Logo" class="w-100 h-100" style="object-fit: cover;">
+        </div>
+        <div class="col-10 position-relative p-0" style="background-image: url('./images/cosmetics-banner.jpeg'); background-size: cover; background-position: center; min-height: 300px;">
+          <div class="position-absolute top-50 start-50 translate-middle text-white text-center bg-dark bg-opacity-50 p-4 rounded">
+            <h1>Explore Our Colognes</h1>
+            <p>Premium scents crafted to impress</p>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!-- Logo and Banner -->
-    <div class="row m-0 g-0">
-      <div class="col-2 d-flex align-items-center justify-content-center bg-white">
-        <img src="./images/to_edit.jpg" alt="SGFB Logo" class="w-100 h-100" style="object-fit: cover;">
-      </div>
-      <div class="col-10 position-relative p-0" style="background-image: url('./images/cosmetics-banner.jpeg'); background-size: cover; background-position: center; min-height: 300px;">
-        <div class="position-absolute top-50 start-50 translate-middle text-white text-center bg-dark bg-opacity-50 p-4 rounded">
-          <h1>Explore Our Colognes</h1>
-          <p>Premium scents crafted to impress</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cologne Product Grid -->
-    <div class="container my-5">
-      <div class="row g-4">
-        <!-- 24 cologne cards -->
-        <!-- 6 cards per row using col-2 -->
-        <!-- Generated below -->
-        
-        <!-- Loop for cologne1 to cologne24 -->
-        <!-- Example: We manually insert for visual -->
-        <!-- You can dynamically load if needed -->
-
-        <!-- BEGIN GENERATED CARDS -->
-        
-        <!-- Repeat this block for 1 to 24 -->
-        <!-- Shortened for brevity here -->
-        
-        <!-- Sample for cologne1 to cologne24 -->
-        <!-- Random names & prices -->
-        
-        <!-- This portion will be programmatically inserted in a real app -->
-        
-        <!-- Here's the first 10 from earlier -->
-        <!-- Now we’ll continue from 11 to 24 below -->
-
-        <!-- cologne11 to cologne24 -->
-        
-        <!-- Example -->
-        <div class="col-2">
-            <div class="card">
-              <img src="./images/colongne/colong1.jpeg" class="card-img-top" alt="Cologne 13">
-              <div class="card-body text-center">
-                <h6 class="card-title">Crisp Alpine</h6>
-                <p class="card-text">$19.25</p>
-              </div>
-            </div>
-          </div>
-        <div class="col-2">
-            <div class="card">
-              <img src="./images/colongne/colong1.jpeg" class="card-img-top" alt="Cologne 13">
-              <div class="card-body text-center">
-                <h6 class="card-title">Crisp Alpine</h6>
-                <p class="card-text">$19.25</p>
-              </div>
-            </div>
-          </div>
-        <div class="col-2">
-            <div class="card">
-              <img src="./images/colongne/colong13.jpeg" class="card-img-top" alt="Cologne 13">
-              <div class="card-body text-center">
-                <h6 class="card-title">Crisp Alpine</h6>
-                <p class="card-text">$19.25</p>
-              </div>
-            </div>
-          </div>
-        <div class="col-2">
-            <div class="card">
-              <img src="./images/colongne/colong13.jpeg" class="card-img-top" alt="Cologne 13">
-              <div class="card-body text-center">
-                <h6 class="card-title">Crisp Alpine</h6>
-                <p class="card-text">$19.25</p>
-              </div>
-            </div>
-          </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong11.jpeg" class="card-img-top" alt="Cologne 11">
-            <div class="card-body text-center">
-              <h6 class="card-title">Spicy Leather</h6>
-              <p class="card-text">$24.00</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong12.jpeg" class="card-img-top" alt="Cologne 12">
-            <div class="card-body text-center">
-              <h6 class="card-title">Lavender Chill</h6>
-              <p class="card-text">$16.99</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong13.jpeg" class="card-img-top" alt="Cologne 13">
-            <div class="card-body text-center">
-              <h6 class="card-title">Crisp Alpine</h6>
-              <p class="card-text">$19.25</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong14.jpeg" class="card-img-top" alt="Cologne 14">
-            <div class="card-body text-center">
-              <h6 class="card-title">Wild Mint</h6>
-              <p class="card-text">$18.75</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong15.jpeg" class="card-img-top" alt="Cologne 15">
-            <div class="card-body text-center">
-              <h6 class="card-title">Smoky Trail</h6>
-              <p class="card-text">$22.50</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong16.jpeg" class="card-img-top" alt="Cologne 16">
-            <div class="card-body text-center">
-              <h6 class="card-title">Citrus Ice</h6>
-              <p class="card-text">$17.45</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong17.jpeg" class="card-img-top" alt="Cologne 17">
-            <div class="card-body text-center">
-              <h6 class="card-title">Noir Touch</h6>
-              <p class="card-text">$23.30</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong18.jpeg" class="card-img-top" alt="Cologne 18">
-            <div class="card-body text-center">
-              <h6 class="card-title">Forest Amber</h6>
-              <p class="card-text">$20.25</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong19.jpeg" class="card-img-top" alt="Cologne 19">
-            <div class="card-body text-center">
-              <h6 class="card-title">Musk Fusion</h6>
-              <p class="card-text">$21.60</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong20.jpeg" class="card-img-top" alt="Cologne 20">
-            <div class="card-body text-center">
-              <h6 class="card-title">Cedar Rush</h6>
-              <p class="card-text">$19.80</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong21.jpeg" class="card-img-top" alt="Cologne 21">
-            <div class="card-body text-center">
-              <h6 class="card-title">Royal Oak</h6>
-              <p class="card-text">$22.75</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong22.jpeg" class="card-img-top" alt="Cologne 22">
-            <div class="card-body text-center">
-              <h6 class="card-title">Citrus Spice</h6>
-              <p class="card-text">$18.90</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong23.jpeg" class="card-img-top" alt="Cologne 23">
-            <div class="card-body text-center">
-              <h6 class="card-title">Herbal Mist</h6>
-              <p class="card-text">$16.80</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card">
-            <img src="./images/colongne/colong24.jpeg" class="card-img-top" alt="Cologne 24">
-            <div class="card-body text-center">
-              <h6 class="card-title">Amber Drift</h6>
-              <p class="card-text">$21.10</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- END 24 Cards -->
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
-      <div class="container">
+      
+      <!-- Filter Controls -->
+      <div class="container my-4">
         <div class="row">
-          <div class="col-md-4">
-            <h5>About</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white text-decoration-none">Our Story</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Team</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
-            </ul>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="searchBox" placeholder="Search colognes by name...">
           </div>
-          <div class="col-md-4">
-            <h5>Contact Us</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white text-decoration-none">Email</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Support</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Location</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Follow Us</h5>
-            <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-white text-decoration-none"><i class="bi bi-linkedin"></i></a>
+          <div class="col-md-3">
+            <select class="form-select" id="priceSort">
+              <option value="">Sort by price</option>
+              <option value="asc">Low to High</option>
+              <option value="desc">High to Low</option>
+            </select>
           </div>
         </div>
       </div>
-    </footer>
-  </div>
-</body>
-</html>
+      
+      <!-- Cologne Product Grid -->
+      <div class="container my-5">
+        <div class="row g-4" id="productGrid">
+          <!-- JS will render cards here -->
+        </div>
+      </div>
+      
+      <!-- Modal Template -->
+      <div id="modalContainer"></div>
+      
+      <script>
+        const products = Array.from({ length: 24 }, (_, i) => {
+          const titles = [
+            "Fresh Citrus", "Ocean Breeze", "Woody Spice", "Midnight Musk", "Amber Touch", "Bold Oud",
+            "Cedar Woods", "Sweet Vanilla", "Rain Forest", "Urban Night", "Spicy Leather", "Lavender Chill",
+            "Crisp Alpine", "Wild Mint", "Smoky Trail", "Citrus Ice", "Noir Touch", "Forest Amber",
+            "Musk Fusion", "Cedar Rush", "Royal Oak", "Citrus Spice", "Herbal Mist", "Amber Drift"
+          ];
+          return {
+            id: i + 1,
+            name: titles[i],
+            price: (14 + Math.random() * 10).toFixed(2),
+            image: `./images/colongne/colong${i + 1}.jpeg`,
+            desc: `Experience the elegant essence of ${titles[i]} in our signature blend.`
+          };
+        });
+      
+        const productGrid = document.getElementById("productGrid");
+        const modalContainer = document.getElementById("modalContainer");
+      
+        function renderProducts(list) {
+          productGrid.innerHTML = "";
+          modalContainer.innerHTML = "";
+          list.forEach(prod => {
+            productGrid.innerHTML += `
+              <div class="col-2">
+                <div class="card">
+                  <img src="${prod.image}" class="card-img-top" alt="${prod.name}">
+                  <div class="card-body text-center">
+                    <h6 class="card-title">${prod.name}</h6>
+                    <p class="card-text">$${prod.price}</p>
+                    <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modal-${prod.id}">View</button>
+                  </div>
+                </div>
+              </div>
+            `;
+            modalContainer.innerHTML += `
+              <div class="modal fade" id="modal-${prod.id}" tabindex="-1" aria-labelledby="modalLabel-${prod.id}" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel-${prod.id}">${prod.name}</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="${prod.image}" class="img-fluid mb-3" alt="${prod.name} Large">
+                      <p>${prod.desc}</p>
+                      <p class="fw-bold">Price: $${prod.price}</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Contact Us</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+        }
+      
+        renderProducts(products);
+      
+        document.getElementById("searchBox").addEventListener("input", e => {
+          const keyword = e.target.value.toLowerCase();
+          const filtered = products.filter(p => p.name.toLowerCase().includes(keyword));
+          renderProducts(filtered);
+        });
+      
+        document.getElementById("priceSort").addEventListener("change", e => {
+          const val = e.target.value;
+          const sorted = [...products];
+          if (val === "asc") sorted.sort((a, b) => a.price - b.price);
+          if (val === "desc") sorted.sort((a, b) => b.price - a.price);
+          renderProducts(sorted);
+        });
+      </script>
+      
+      <!-- Footer -->
+      <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-left">
+          <div class="row text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">SGFB</h5>
+              <p>Your destination for quality cosmetics and fragrances. Discover your best look.</p>
+            </div>
+  
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">About</h5>
+              <p><a href="#" class="text-white text-decoration-none">Our Story</a></p>
+              <p><a href="#" class="text-white text-decoration-none">Team</a></p>
+              <p><a href="#" class="text-white text-decoration-none">Careers</a></p>
+            </div>
+  
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Contact Us</h5>
+              <p><a href="#" class="text-white text-decoration-none">Email</a></p>
+              <p><a href="#" class="text-white text-decoration-none">Support</a></p>
+              <p><a href="#" class="text-white text-decoration-none">Location</a></p>
+            </div>
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold">Leave a Message</h5>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="2" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-light btn-sm">Send</button>
+              </form>
+            </div>
+          </div>
+  
+          <hr class="mb-4">
+  
+          <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+              <p>© 2025 SGFB. All rights reserved.</p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+                <a href="#" class="text-white me-4 text-decoration-none"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-4 text-decoration-none"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-4 text-decoration-none"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white text-decoration-none"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      </body>
+      </html>
+      </div>
+
+    <!-- JS Filter Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.getElementById("searchInput");
+        const priceFilter = document.getElementById("priceFilter");
+
+        function filterCards() {
+          const cards = document.querySelectorAll(".card");
+          const query = searchInput.value.toLowerCase();
+          const prices = [];
+
+          cards.forEach(card => {
+            const title = card.querySelector(".card-title").innerText.toLowerCase();
+            const match = title.includes(query);
+            card.parentElement.style.display = match ? "block" : "none";
+            if (match) prices.push(card);
+          });
+
+          if (priceFilter.value) {
+            prices.sort((a, b) => {
+              const priceA = parseFloat(a.querySelector(".card-text").innerText.replace("$", ""));
+              const priceB = parseFloat(b.querySelector(".card-text").innerText.replace("$", ""));
+              return priceFilter.value === "asc" ? priceA - priceB : priceB - priceA;
+            });
+
+            const container = document.querySelector(".row.g-4");
+            prices.forEach(card => container.appendChild(card.parentElement));
+          }
+        }
+
+        searchInput.addEventListener("input", filterCards);
+        priceFilter.addEventListener("change", filterCards);
+      });
+    </script>
+    </body>
+    </html>
