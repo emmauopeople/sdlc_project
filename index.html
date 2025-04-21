@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGFB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container-fluid p-0">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">
+          <img src="./images/logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          SGFB
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./">All Products</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./">New Products</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./">Trending</a></li>
+            <li class="nav-item"><a class="nav-link" href="./login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Logo and Banner -->
+    <div class="row m-0 g-0">
+      <div class="col-4 d-flex align-items-center justify-content-center bg-white">
+        <img src="./images/to_edit.jpg" alt="SGFB Logo" class="w-100 h-100" style="object-fit: cover;">
+      </div>
+      <div class="col-8 position-relative p-0" style="background-image: url('./images/cosmetics-banner.jpeg'); background-size: cover; background-position: center; min-height: 400px;">
+        <div class="position-absolute top-50 start-50 translate-middle text-white text-center bg-dark bg-opacity-50 p-4 rounded">
+          <h1>Smells Good, Feel Better</h1>
+          <p>Discover premium cosmetics and fragrances just for you</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="container my-5">
+      <div class="d-flex overflow-auto gap-4" style="scroll-snap-type: x mandatory;">
+        <!-- Example static products -->
+        <div class="card flex-shrink-0" style="min-width: 250px; scroll-snap-align: start;">
+          <img src="./images/product1.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lipstick Red</h5>
+            <p class="card-text">$19.99</p>
+            <button class="btn btn-outline-dark">Buy Now</button>
+          </div>
+        </div>
+        
+        <!-- Copy & paste this block for up to 10 static products -->
+        <!-- new card -->
+        <div class="card flex-shrink-0" style="min-width: 250px; scroll-snap-align: start;">
+          <img src="./images/product1.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lipstick Red</h5>
+            <p class="card-text">$19.99</p>
+            <button class="btn btn-outline-dark">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="./" aria-label="Bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508z" fill="currentColor"></path></svg>
+            <span class="fs-5">Bootstrap</span>
+          </a>
+          <ul class="list-unstyled small">
+            <li class="mb-2">Designed and built with love by the <a href="#">Bootstrap team</a>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
