@@ -45,7 +45,7 @@
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link active" href="index.html">New Products</a></li>
-              <li class="nav-item"><a class="nav-link active" href="index.html">Trending</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./">Trending</a></li>
               <li class="nav-item"><a class="nav-link" href="./login">Login</a></li>
             </ul>
           </div>
@@ -93,17 +93,17 @@
       
       <script>
         const products = Array.from({ length: 24 }, (_, i) => {
-          const titles = [
-            "Fresh Citrus", "Ocean Breeze", "Woody Spice", "Midnight Musk", "Amber Touch", "Bold Oud",
-            "Cedar Woods", "Sweet Vanilla", "Rain Forest", "Urban Night", "Spicy Leather", "Lavender Chill",
-            "Crisp Alpine", "Wild Mint", "Smoky Trail", "Citrus Ice", "Noir Touch", "Forest Amber",
-            "Musk Fusion", "Cedar Rush", "Royal Oak", "Citrus Spice", "Herbal Mist", "Amber Drift"
-          ];
+            const titles = [
+      "Citrus Blast", "Ocean Rush", "Tropical Burst", "Mint Mist", "Blue Energy", "Ice Storm",
+      "Sunset Spray", "Thunderbolt", "Rain Drop", "Fresh Blaze", "Vanilla Surge", "Jungle Splash",
+      "Frosted Drift", "Cool Vibes", "Coconut Breeze", "Spice Kick", "Aqua Thunder", "Smoky Surf",
+      "Urban Chill", "Berry Boost", "Zesty Wave", "Herbal Shot", "Summer Mist", "Bold Edge"
+    ];
           return {
             id: i + 1,
             name: titles[i],
             price: (14 + Math.random() * 10).toFixed(2),
-            image: `./images/colongne/colong${i + 1}.jpeg`,
+            image: `./images/bodyspray/spray${i + 1}.jpeg`,
             desc: `Experience the elegant essence of ${titles[i]} in our signature blend.`
           };
         });
